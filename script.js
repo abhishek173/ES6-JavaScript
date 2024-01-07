@@ -78,3 +78,78 @@
 //     console.log("Above")
 // })
 
+
+//sabse pahle ghar aao
+// gate kholo aur gate lgao
+// khana pkao aur khana khao
+// incognito mode chlao
+// so jao
+
+// var ans = new Promise(function(resolve,reject){
+//     return resolve("sabse pahle ghar pe aao")
+// })
+
+// var p2 = ans.then((data)=>{
+//     console.log(data)
+//     return new Promise((resolve,reject)=>{
+//         return resolve("gate kholo aur gate lgao")
+//     })
+// })
+
+// var p3 = p2.then((data)=>{
+//     console.log(data)
+//     return new Promise((resolve,reject)=>{
+//         return resolve("khana pkao aur khana khao")
+//     })
+// })
+
+// var p4 = p3.then((data)=>{
+//     console.log(data)
+//     return new Promise((res,rej)=>{
+//         return res("incognito mode chlao")
+//     })
+// })
+
+// var p5 = p4.then((data)=>{
+//     console.log(data)
+//     return new Promise((resolve,reject)=>{
+//         return resolve("so jao")
+//     })
+// })
+
+// p5.then((data)=>{
+//     console.log(data)
+// })
+
+//async await 
+
+//koi aisa function jisme aap async code likhenge, kyoki async code hai to aap 
+//promise ka istemal kar skte hai, jab uska answer aayega tab aapko lgana pdega.
+// uss then ko lgane se bachne ke liye aap async await ka istemal kar skte hai 
+
+
+// async function abcd(){
+//     let raw = await fetch("https://randomuser.me/api/");
+//     let data = await raw.json();
+//     console.log(data);
+// }
+
+// abcd()
+
+
+//jab bhi koi code async hai to aapko uske liye wait krna pdta hain, kyuki hme nhi pta ki uska answer kab aayega.aapko
+
+// 5 use cases of real world
+// node me jab db
+// fetch api
+// settimeout
+// setinterval
+
+// console.log("hey")
+// try{
+//     console.log(hey)
+// }
+// catch(err){
+//     console.log(err)
+// }
+// console.log("hey")
